@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Meta tags básicas para configuração da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@linkpsicologia - Proposta Interativa</title>
+    
+    <!-- Importação dos estilos CSS personalizados -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Fonte Google Fonts - Inter para tipografia moderna -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Script JavaScript para funcionalidades interativas -->
+    <script src="script.js"></script>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header fixo com navegação principal -->
     <header class="header">
         <nav class="nav">
             <div class="nav-container">
+                <!-- Logo/marca da @linkpsicologia -->
                 <div class="nav-logo">
                     <i class="fas fa-brain"></i>
                     <span>@linkpsicologia</span>
                 </div>
+                
+                <!-- Menu de navegação principal -->
                 <ul class="nav-menu" id="nav-menu">
                     <li><a href="#apresentacao" class="nav-link">Apresentação</a></li>
                     <li><a href="#concorrentes" class="nav-link">Análise</a></li>
@@ -25,6 +38,8 @@
                     <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
                     <li><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
+                
+                <!-- Botão hambúrguer para menu mobile -->
                 <div class="nav-toggle" id="nav-toggle">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -34,12 +49,15 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Seção Hero - Banner principal com título e estatísticas -->
     <section id="apresentacao" class="hero">
         <div class="container">
             <div class="hero-content">
+                <!-- Título principal da proposta -->
                 <h1 class="hero-title">Proposta Interativa para @linkpsicologia</h1>
                 <p class="hero-subtitle">Uma referência em psicologia infantil e atendimento a crianças com autismo em Belo Horizonte</p>
+                
+                <!-- Estatísticas em destaque -->
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">17</span>
@@ -58,22 +76,29 @@
         </div>
     </section>
 
-    <!-- Apresentação -->
+    <!-- Seção de Apresentação - Contexto e informações sobre a @linkpsicologia -->
     <section class="section">
         <div class="container">
             <div class="content-card">
                 <h2 class="section-title">Apresentação da @linkpsicologia e Contexto do Mercado</h2>
+                
+                <!-- Grid com 3 cards informativos -->
                 <div class="content-grid">
+                    <!-- Card 1: Nossa Essência -->
                     <div class="content-item">
                         <i class="fas fa-heart icon"></i>
                         <h3>Nossa Essência</h3>
                         <p>Bem-vinda à proposta interativa desenvolvida para a @linkpsicologia, uma referência em psicologia infantil e atendimento a crianças com autismo em Belo Horizonte. Com 17 anos de experiência, a psicóloga Natália e sua equipe têm construído um legado de cuidado, desenvolvimento e inclusão.</p>
                     </div>
+                    
+                    <!-- Card 2: Objetivo Principal -->
                     <div class="content-item">
                         <i class="fas fa-target icon"></i>
                         <h3>Objetivo Principal</h3>
                         <p>O objetivo principal é aumentar o número de pacientes e terapeutas, expandindo o impacto da @linkpsicologia na comunidade. Para isso, é fundamental otimizar a presença online, qualificando leads e estabelecendo um fluxo contínuo de aquisição.</p>
                     </div>
+                    
+                    <!-- Card 3: Tom de Comunicação -->
                     <div class="content-item">
                         <i class="fas fa-comments icon"></i>
                         <h3>Tom de Comunicação</h3>
@@ -84,13 +109,15 @@
         </div>
     </section>
 
-    <!-- Análise de Concorrentes -->
+    <!-- Seção de Análise de Concorrentes - Menu sanfonado (accordion) -->
     <section id="concorrentes" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Análise de Concorrentes</h2>
             <p class="section-subtitle">Análise detalhada dos principais concorrentes da @linkpsicologia em Belo Horizonte</p>
             
+            <!-- Container do accordion com 5 concorrentes -->
             <div class="accordion">
+                <!-- Item 1: Clínica Bambolê -->
                 <div class="accordion-item">
                     <div class="accordion-header" onclick="toggleAccordion(this)">
                         <h3>Clínica Bambolê</h3>
@@ -114,6 +141,7 @@
                     </div>
                 </div>
 
+                <!-- Item 2: Clínica Pé no Chão -->
                 <div class="accordion-item">
                     <div class="accordion-header" onclick="toggleAccordion(this)">
                         <h3>Clínica Pé no Chão</h3>
@@ -137,6 +165,7 @@
                     </div>
                 </div>
 
+                <!-- Item 3: Carolina Faria Psicóloga -->
                 <div class="accordion-item">
                     <div class="accordion-header" onclick="toggleAccordion(this)">
                         <h3>Carolina Faria Psicóloga</h3>
@@ -160,6 +189,7 @@
                     </div>
                 </div>
 
+                <!-- Item 4: Clínica Origami -->
                 <div class="accordion-item">
                     <div class="accordion-header" onclick="toggleAccordion(this)">
                         <h3>Clínica Origami</h3>
@@ -183,6 +213,7 @@
                     </div>
                 </div>
 
+                <!-- Item 5: Clínica Intervir - APAE-BH -->
                 <div class="accordion-item">
                     <div class="accordion-header" onclick="toggleAccordion(this)">
                         <h3>Clínica Intervir - APAE-BH</h3>
@@ -381,20 +412,28 @@
                     <i class="fas fa-phone"></i>
                     <div>
                         <h3>Celular</h3>
-                        <a href="tel:+5531999347385">(31) 99934-7385</a>
+                        <a href="https://wa.me/5531999347385?text=Olá! Gostaria de saber mais sobre a proposta da @linkpsicologia" 
+       target="_blank" 
+       title="Falar no WhatsApp">(31) 99934-7385</a>
                     </div>
                 </div>
             </div>
             
             <div class="cta-section">
-                <a href="mailto:analuizacunhagt@gmail.com" class="cta-button">
+                <a href="https://wa.me/5531999347385?text=Olá! Gostaria de saber mais sobre a proposta da @linkpsicologia" 
+       target="_blank" 
+       title="Falar no WhatsApp" class="cta-button">
                     <i class="fas fa-paper-plane"></i>
                     Entrar em Contato
                 </a>
             </div>
         </div>
     </section>
-
+<a href="https://wa.me/5531999347385?text=Olá! Gostaria de saber mais sobre a proposta da @linkpsicologia" 
+       target="_blank" 
+       title="Falar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -402,7 +441,15 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Botão flutuante do WhatsApp -->
+    <a href="https://wa.me/5531999347385?text=Olá! Gostaria de saber mais sobre a proposta da @linkpsicologia" 
+       class="whatsapp-float" 
+       target="_blank" 
+       title="Falar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    
 </body>
 </html>
 
